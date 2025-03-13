@@ -1,0 +1,23 @@
+import java.util.Scanner; // importação
+
+public class Maioridade { // atalho class
+
+    public static void main(String[] args) { // atalho psvm
+        Scanner idade = new Scanner(System.in); // criação do scanner
+
+        while (true) { // sistema de loop
+            System.out.println("Digite sua idade, caso seja maior de 18 anos, você será aprovado"); // mensagem para o usuario
+            byte ano = idade.nextByte();
+
+                if (ano == 0) { // encerramento do loop
+                    System.out.println("Encerrando programa");
+                    break;
+                } else if (ano >= 18) {
+                    System.out.println("Você foi aprovado"); // mensagem de aprovação (true)
+                } else {
+                    System.out.println("Você foi não foi aprovado"); // mensagem de reprovação  (false)
+                }
+        }
+        idade.close(); // encerramendo do scanner
+    }
+}
