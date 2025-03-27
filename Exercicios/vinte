@@ -1,20 +1,20 @@
-import java.util.Scanner; // importação do scanner
+import java.util.Scanner; 
 
-public class vinte { // atalho class
-    public static void main(String[] args) { // atalho psvm
-        Scanner input = new Scanner(System.in); // crição do scanner
+public class vinte { 
+    public static void main(String[] args) { 
+        Scanner input = new Scanner(System.in); 
 
         while (true) { // sistema de loop
-            System.out.println("Insira um número apartir de 20 para obter seu o resultado do numero dividido por 2."); // mensagem ao usuário
+            System.out.println("Insira um número apartir de 20 para obter seu o resultado do numero dividido por 2.");
             long numero = input.nextLong();
 
                 if (numero >= 20) {
-                    System.out.println(numero / 2.0); // divisão do valor válido
+                    System.out.println(numero / 2.0); 
                 } else {
-                    System.out.println("Número inválido"); // valor inválido
-                    break; // encerramento do loop
+                    System.out.println("Número inválido"); 
+                    break; 
                 }
         }
-        input.close(); // encerramento do scanner
+        input.close(); 
     }
 }
